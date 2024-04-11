@@ -1,0 +1,22 @@
+cluster_name = "vishnu-eks-cluster"
+key_pair = "key-vishnu"
+instance_types = ["t3.medium"]
+node_group_name = "cluster-node-group-vishnu"
+public_access_cidrs = ["0.0.0.0/0"]
+tags = "cluster-vpc-vishnu"
+tags2 = "cluster-vpc-vishnu-tag2"
+vpc_cidr = "192.168.0.0/16"
+instance_tenancy = "default"
+private_sn_count = "2"
+public_sn_count = "2"
+public_cidrs = ["192.168.1.0/24", "192.168.2.0/24"]
+private_cidrs = ["192.168.3.0/24", "192.168.4.0/24"]
+rt_route_cidr_block = "0.0.0.0/0"
+access_ip              = "0.0.0.0/0"
+scaling_desired_size = "2"
+scaling_max_size = "2"
+scaling_min_size = "2"
+map_public_ip_on_launch = "true"
+key_name = "key-vishnu"
+ami_id = "ami-008fe2fc65df48dac"
+
